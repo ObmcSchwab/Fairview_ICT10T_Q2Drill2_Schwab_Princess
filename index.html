@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Q2 Drill 2</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #87CEEB, #001f3f); /* sky blue to navy */
+            font-family: 'Segoe UI', sans-serif;
+            color: #001f3f;
+        }
+        .card {
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            background-color: #f8f9fa; /* cream accent */
+        }
+        h1 {
+            color: #001f3f; /* navy */
+        }
+        .btn-primary {
+            background-color: #001f3f; /* navy */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #004080; /* lighter navy */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card p-4">
+        <h1 class="text-center">Student Club Members</h1>
+        <p class="text-center">Add new members and view the full list.</p>
+
+        <!-- Input fields -->
+        <div class="mb-3">
+            <input type="text" id="fname" class="form-control" placeholder="First Name">
+        </div>
+        <div class="mb-3">
+            <input type="text" id="lname" class="form-control" placeholder="Last Name">
+        </div>
+
+        <!-- Button -->
+        <button class="btn btn-primary w-100" py-click="add_member">Add Member</button>
+
+        <!-- Results -->
+        <div id="results" class="mt-4"></div>
+    </div>
+</div>
+
+<!-- Link to external Python file -->
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
+
+
